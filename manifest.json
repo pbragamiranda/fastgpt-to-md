@@ -1,0 +1,34 @@
+{
+  "name": "Kagi FastGPT To Markdown",
+  "version": "1.0",
+  "author": "Pedro Miranda",
+  "description": "Copy Kagi's FastGPT Questions and Answer To Markdown",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "libs/turndown.umd.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Kagi FastGPT To Markdown",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/icon-32.png",
+      "32": "images/icon-32.png",
+      "96": "images/icon-96.png"
+    }
+  }
+}
