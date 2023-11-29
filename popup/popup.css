@@ -33,6 +33,9 @@ a#copyButton {
   background-color: #ffb319;
   padding: 8px 24px;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+a#copyButton:active {
+  background-color: #b37300;
+}
